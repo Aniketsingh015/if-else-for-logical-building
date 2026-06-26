@@ -24,9 +24,6 @@ public class ques7 {
                 System.out.println("three");
                 break;
                 
-            case 0:
-                System.out.println("zero");
-                break;
                 
                 
             case 4:
