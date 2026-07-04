@@ -8,14 +8,30 @@ public class Ques10 {
 
         boolean isPrime=true;
 
-        for(int i=2;i<num;i++){
+        // for(int i=2;i<num;i++){
+        //     if(num%i==0){
+        //         isPrime=false;
+        //         break;
+        //     }
+
+        // }if(isPrime){
+        //     //System.out.println(num+"is prime");
+        // }
+
+        // 2nd approach why to check till repeating pair we will not check repeating pairs
+        // for that we will use sqrt func
+
+        for(int i=2;i<Math.sqrt(num);i++){
             if(num%i==0){
                 isPrime=false;
                 break;
             }
-
-        }if(isPrime){
-            System.out.println(num+"is prime");
+        }
+        if(isPrime){
+            System.out.println(num+" is prime");
+        }
+        else{
+            System.out.println(num+" is not prime");
         }
     }
     
