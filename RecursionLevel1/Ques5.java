@@ -3,6 +3,7 @@ public class Ques5 {
         // if(n==0)return sum;
         // sum+=n;
         // return sumHelper(n-1, sum);
+        
         if(n==0)return 0;
         return n+sumHelper(n-1);
     }
