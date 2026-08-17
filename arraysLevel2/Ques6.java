@@ -12,3 +12,4 @@ public class Ques6 {
         System.out.println(sum);
     }
 }
+// if we have -4,-6 in even what will be its calculation it will be 0 as always we dont need math.abs in this and if we use it is extra call 
