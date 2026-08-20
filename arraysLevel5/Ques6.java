@@ -1,6 +1,5 @@
 
 
-
 public class Ques6 {
     public static void main(String[] args) {
         int arr[]={20,40,30,1,50};
