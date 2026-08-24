@@ -1,16 +1,22 @@
 // Reverse each word in a sentence.
+// Reverse each word in a sentence.
 public class Ques2 {
     public static void main(String[] args) {
-        String s= "I am learning java";
-        StringBuilder sb=new StringBuilder();
+        String s = "I am learning java";
+        StringBuilder sb = new StringBuilder();
 
-        String[] word=s.split(" ");
-        // this will soit the char into array as well in order
+        String[] word = s.split(" ");
 
-        for(int i=word.length-1;i>=0;i--){
-            sb.append(word[i]);
+        for (int i = 0; i < word.length; i++) {
+            String currentWord = word[i];
+
+            // inner loop: reverse the letters of THIS word only
+            for (int j = currentWord.length() - 1; j >= 0; j--) {
+                sb.append(currentWord.charAt(j));
+            }
             sb.append(' ');
         }
-        System.out.println(sb.toString());
+
+        System.out.println(sb.toString().trim());
     }
 }
